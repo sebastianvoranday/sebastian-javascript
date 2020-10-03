@@ -78,8 +78,37 @@
 
     let name03 = makeName("Robert", "\"Beto\"", "O\'Rourke");
     console.log(name03);
+    
+    // flow control
 
-  
+    console.log("Making better name function:");
+    // middle initial
+    function makeBetterName(firstName, middleName, lastName) {
+      if (middleName.length === 1) {
+        middleName = middleName + ".";
+      }
+      let fullName = firstName + " " + middleName + " " + lastName
+      return fullName
+    }
+    console.log(makeBetterName("Joan", "Marie", "Larkin"));
+    console.log(makeBetterName("John", "F", "Kennedy"));
+    console.log(makeBetterName("John", "C", "Reilly"));
+    
+    // else and if else
+
+    console.log("scoreCompare function");
+  function scoreCompare(home, away) {
+    if (home > away) {
+      return "Home team wins!";
+    } else if (home === away) {
+      return "It was a tie"
+    } else {
+      return "Away team wins :("
+    }
+  }
+  console.log(scoreCompare(5,3));
+  console.log(scoreCompare(3,5));
+  console.log(scoreCompare(5,5));
 
   </script>
 </body>
