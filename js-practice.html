@@ -46,6 +46,41 @@
 
     let greeting = 'My name is' + ' ' + name;
     console.log(greeting);
+
+    console.log("Using Functions");
+    // function to make square numbers
+    
+    function makeSquare(theNumb) {
+      let squared = theNumb * theNumb;
+      return squared;
+    }
+    
+    let try01 = makeSquare(3);
+    console.log(try01);
+
+    let try02 = makeSquare(7);
+    console.log(try02);
+
+    let try03 = makeSquare(15);
+    console.log(try03);
+    // Functions on my own. Name machine
+
+    function makeName(name1, name2, name3) {
+      let name = name1 + " " + name2 + " " + name3
+      return name;
+    }
+    
+    let name01 = makeName("Sebastian", "Valdez", "Oranday");
+    console.log(name01);
+
+    let name02 = makeName("Obi", "Wan", "Kenobi");
+    console.log(name02);
+
+    let name03 = makeName("Robert", "\"Beto\"", "O\'Rourke");
+    console.log(name03);
+
+  
+
   </script>
 </body>
 </html>
